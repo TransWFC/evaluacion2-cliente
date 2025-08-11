@@ -1,6 +1,8 @@
 export interface User {
-    id: number;
-    email: string;
-    userName: string;
-    role: 'Admin' | 'User';
+  id: string;
+  username: string;
+  email: string;
+  role: 'Administrador' | 'Bibliotecario' | 'UsuarioRegistrado';
+  createdAt?: Date;
+  isActive?: boolean;
 }
