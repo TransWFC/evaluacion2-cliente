@@ -1,22 +1,12 @@
+// src/app/features/auth/auth-module.ts
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { SharedModule } from '../../shared/shared.module';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
-import { Register } from './register/register.component';
-import { MaterialModule } from '../../shared/material.module';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    Register
-  ],
-  imports: [
-    CommonModule,
-    ReactiveFormsModule,
-    AuthRoutingModule,
-    MaterialModule
-  ]
+  declarations: [LoginComponent, RegisterComponent],
+  imports: [SharedModule, AuthRoutingModule],
 })
-export class AuthModule { }
+export class AuthModule {}
