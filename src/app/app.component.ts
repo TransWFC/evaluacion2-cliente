@@ -1,4 +1,3 @@
-// app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './core/services/auth.service';
 import { Router } from '@angular/router';
@@ -7,6 +6,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
+  // Removido standalone: true
 })
 export class AppComponent implements OnInit {
   title = 'Sistema de Biblioteca';

@@ -62,17 +62,17 @@
           },
           "defaultConfiguration": "production"
         },
-        "serve": {
+"serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "proxyConfig": "src/proxy.conf.json"
+            "buildTarget": "library-client:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "library-client:build:production"
+              "buildTarget": "library-client:build:production"
             },
             "development": {
-              "browserTarget": "library-client:build:development"
+              "buildTarget": "library-client:build:development"
             }
           },
           "defaultConfiguration": "development"

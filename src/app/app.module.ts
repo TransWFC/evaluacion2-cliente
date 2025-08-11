@@ -8,14 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Core
-import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { AuthInterceptor } from './core/interceptors/auth-interceptor';
 
 // Shared
 import { MaterialModule } from './shared/material.module';
-
-// Layout
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
 
 // Services
 import { AuthService } from './core/services/auth.service';
@@ -25,9 +21,8 @@ import { UserService } from './core/services/user.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    SidebarComponent
+    AppComponent
+    // Navbar y Sidebar se crearán como componentes normales, no standalone
   ],
   imports: [
     BrowserModule,
